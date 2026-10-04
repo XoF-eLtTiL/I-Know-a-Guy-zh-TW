@@ -1,4 +1,4 @@
-﻿
+
 r:"^Deliver the <color\=#1B6B3A>five photos</color> you took to Hank\. \(([0-5])/5\)$"="將你拍攝的<color\=#1B6B3A>五張照片</color>交給 Hank。($1/5)"
 r:"^Amber Weave\\n₿([0-9.]+)$"=琥珀編織\n₿$1
 r:"^Ash Clover\\n₿([0-9.]+)$"=灰三葉草\n₿$1
@@ -105,7 +105,8 @@ r:"^(\[\[[^\]\r\n]{1,160}\]\])\.\ For\ a\ while\ something\ enormous\ kept\ walk
 r:"^(\[\[[^\]\r\n]{1,160}\]\])\.\ Good\ mass,\ good\ edge,\ and\ it's\ got\ wheels,\ which\ honestly\ I\ don't\ know\ if\ that\ helps\ or\ hurts\.\ That's,\ uh,\ that's\ what\ a\ test\ is\ for\.$"=$1。重量不錯、邊緣也不錯，而且還有輪子。老實說，我不知道這到底是加分還是扣分。呃，這就是測試存在的意義。
 r:"^(\[\[[^\]\r\n]{1,160}\]\])\.\ I'm\ not\ explaining\ this\ one\.\ You've\ seen\ the\ pattern\.\ Just\ cook\.$"=$1。我不解釋這次了。你已經看出規律了。做就對了。
 r:"^(\[\[[^\]\r\n]{1,160}\]\])\.\ I'm\ usually\ near\ the\ police\ station\ between\ 19:00\ and\ 22:00\.\ Old\ habits\.\ Meet\ me\ there\ and\ hand\ it\ over\.\ \{\$openworld\.19:00\-22:00\.Near\ the\ Police\ Station\}\ \{\$border_vodka\}$"=$1。我通常會在 19:00 到 22:00 之間待在警察局附近。老習慣了。到那裡跟我碰面並交貨。{$openworld.19:00-22:00.Near the Police Station} {$border_vodka}
-r:"^(\[\[[^\]\r\n]{1,160}\]\])\.\ I\ hang\ around\ the\ hangars\ between\ 18:00\ and\ 21:00\ most\ evenings\.\ Meet\ me\ there\ and\ hand\ it\ over\.\ \{\$openworld\.18:00\-21:00\.Near\ the\ Hangars\}\ \{\$radioactive_material\}$"=$1。我大多數晚上 18:00 到 21:00 都會待在機庫附近。到那裡跟我碰面並交貨。{$openworld.18:00-21:00.Near the Hangars} {$radioactive_material}
+r:"^(\[\[[^\]\r\n]{1,160}\]\])\.\ I\ hang\ around\ the\ hangars\ between\ 18:00\ and\ 21:00\ most\ evenings\.\ Meet\ me\ there\ and\ hand\ it\ over\.\ \{\$openworld\.18:00\-21:00\.Near\ the\ Hangars\}\ \{\$radioactive_mater
+ial\}$"=$1。我大多數晚上 18:00 到 21:00 都會待在機庫附近。到那裡跟我碰面並交貨。{$openworld.18:00-21:00.Near the Hangars} {$radioactive_material}
 r:"^(\[\[[^\]\r\n]{1,160}\]\])\.\ I’ll\ transfer\ the\ crypto\ once\ I’m\ certain\ there’s\ nothing\ left\ to\ recover\.\ \{\$HDD\}$"=$1。等我確定完全沒有任何東西能復原後，就轉加密貨幣給你。{$HDD}
 r:"^(\[\[[^\]\r\n]{1,160}\]\])\.\ I’ll\ wait\ here,\ just\ hand\ it\ to\ me\ at\ the\ shady\ window\.\ \{\$handover\}\ \{\$heroin_block\}$"=$1。我會在這裡等，直接在地下交易窗口交給我。{$handover} {$heroin_block}
 r:"^(\[\[[^\]\r\n]{1,160}\]\])\.\ I’ll\ wait\ here\.\ Just\ hand\ it\ to\ me\ at\ the\ shady\ window\.\ I’ll\ send\ the\ payment\ in\ Bitcoin\.\{\$handover\}\ \{\$bad_dragon_dildo\}$"=$1。我會在這裡等。直接在地下交易窗口交給我，我會用比特幣付款。{$handover} {$bad_dragon_dildo}
@@ -205,7 +206,8 @@ r:"^Deliver\ to\ (?<p0>[^\r\n]{1,160}?)$"=送到 $1
 r:"^Deliver\ two\ (\[\[[^\]\r\n]{1,160}\]\])\ to\ Marlow\.\ \(\{COUNT\}/\{TOTAL\}\)$"=將兩份 $1 交給 Marlow。（{COUNT}/{TOTAL}）
 r:"^Delivering\ in\ (?<p0>[^\r\n]{1,160}?)$"=將於 $1 後送達
 r:"^Delivery: (\d+)-(\d+)s$"=送達時間：$1-$2 秒
-r:"^Destroy\ the\ (\[\[[^\]\r\n]{1,160}\]\])\ in\ the\ incinerator\.$"=在焚化爐中銷毀 $1。
+r:"^Destroy\ th
+e\ (\[\[[^\]\r\n]{1,160}\]\])\ in\ the\ incinerator\.$"=在焚化爐中銷毀 $1。
 r:"^Destroy\ this\ (\[\[[^\]\r\n]{1,160}\]\])\.\ Completely\.\ Melt\ it,\ crush\ it,\ whatever\ you\ do,\ make\ sure\ it\ never\ turns\ back\ on\.\ I’ll\ transfer\ the\ crypto\ once\ I\ know\ it’s\ truly\ dead\.\ \{\$burner_phone\}$"=摧毀這個 $1。徹底摧毀。熔掉、砸爛，隨便你怎麼做，只要確保它永遠不能再開機。等我確定它真的死透了，就轉加密貨幣給你。{$burner_phone}
 r:"^Devs\ nerfed\ my\ hunger\ bar\ this\ patch\.\ (\[\[[^\]\r\n]{1,160}\]\])\.\ I'm\ compensating\.$"=開發者這次更新把我的飢餓條砍弱了。$1。我這是在補回來。
 r:"^Diet\ starts\ Monday\.\ Today\ is\ not\ Monday\.\ (\[\[[^\]\r\n]{1,160}\]\])\.$"=減肥星期一才開始。今天不是星期一。$1。
@@ -260,7 +262,7 @@ r:"^Give\ a\ (\[\[[^\]\r\n]{1,160}\]\])\ to\ Victor\.$"=將 $1 交給 Victor。
 r:"^Give\ a\ pair\ of\ (\[\[[^\]\r\n]{1,160}\]\])\ to\ Burak\.$"=將一副 $1 交給 Burak。
 r:"^Give\ an\ (\[\[[^\]\r\n]{1,160}\]\])\ to\ Camila\.$"=將 $1 交給 Camila。
 r:"^Give\ an\ (\[\[[^\]\r\n]{1,160}\]\])\ to\ Cemil\.$"=將 $1 交給 Cemil。
-r:"^Give\ the\ (?<p0>[^\r\n]{1,160}?)\ to\ (?<p1>[^\r\n]{1,160}?)\.$"=將 $1 交給 $2。
+r:"^Give\ the\ (?!\[\[!)(?<p0>[^\r\n]{1,160}?)\ to\ (?<p1>[^\r\n]{1,160}?)\.$"=將 $1 交給 $2。
 r:"^Give\ the\ \[\[!signed\ badge\]\]\ to\ (?<p0>[^\r\n]{1,160}?)\.$"=將 [[!signed badge]] 交給 $1。
 r:"^Give\ the\ \[\[!signed\ citizen\ ID\]\]\ to\ (?<p0>[^\r\n]{1,160}?)\.$"=將 [[!signed citizen ID]] 交給 $1。
 r:"^Give\ the\ \[\[!signed\ passport\]\]\ to\ (?<p0>[^\r\n]{1,160}?)\.$"=將 [[!signed passport]] 交給 $1。
@@ -292,7 +294,8 @@ r:"^I\ need\ (?<p0>[^\r\n]{1,160}?)\.\ Hand\ it\ over\ directly\.$"=我需要 $1
 r:"^I\ need\ (?<p0>[^\r\n]{1,160}?)\.\ Let's\ handle\ this\ outside\.$"=我需要 $1。我們到外面處理。
 r:"^I\ need\ (?<p0>[^\r\n]{1,160}?)\.\ Meet\ me\ outside\.$"=我需要 $1。到外面跟我碰面。
 r:"^I\ need\ (\[\[[^\]\r\n]{1,160}\]\]),\ the\ banned\ energy\ drink\.\ Hand\ it\ to\ me\ here\ at\ the\ window\.\ I’m\ not\ moving\ until\ I\ have\ it\.\ I’ll\ send\ the\ crypto\ the\ second\ it’s\ in\ my\ hand\.\{\$banned_energy_drink\}\{\$handover\}$"=我需要 $1，就是那款被禁的能量飲料。就在窗口交給我。我拿到之前不會離開。東西一到手就轉加密貨幣給你。{$banned_energy_drink}{$handover}
-r:"^I\ need\ (\[\[[^\]\r\n]{1,160}\]\]),\ the\ high\-nicotine\ one\.\ You\ can\ find\ me\ by\ the\ rocks\ near\ the\ Lookout\ tower\ between\ 20:00\ and\ 23:00\ pretty\ much\ every\ day\.\ I’ll\ send\ the\ crypto\ when\ we\ meet\.\ \{\$high_nicotine_vapes\}\{\$openworld\.20:00\-23:00\.Rocks\ near\ the\ Lookout\ Tower\}$"=我需要 $1，要高尼古丁的那種。幾乎每天 20:00 到 23:00 都能在瞭望塔附近的岩石旁找到我。碰面時我會轉加密貨幣給你。{$high_nicotine_vapes}{$openworld.20:00-23:00.Rocks near the Lookout Tower}
+r:"^I\ need\ (\[\[[^\]\r\n]{1,160}\]\]),\ the\ high\-nicotine\ one\.\ You\ can\ find\ me\ by\ the\ rocks\ near\ the\ Lookout\ tower\ between\ 20:00\ and\ 23:00\ pretty\ much\ every\ day\.\ I’ll\ send\ the\ crypto\ when\ we\ meet\.\ \{\$high_nicotine_vapes\}\{\$openworld\.20:00\-23:00\.Rocks\ near\ the\ Lookout\ Tower\}$"=我需要 $1，要高尼古丁的那種。幾乎每天 20:00 到 23:00 都能在瞭望塔附近的岩石旁找到我。碰面時我會轉加密貨幣給你。{$hi
+gh_nicotine_vapes}{$openworld.20:00-23:00.Rocks near the Lookout Tower}
 r:"^I\ need\ (\[\[[^\]\r\n]{1,160}\]\]),\ the\ prescription\-only\ kind\ they\ won’t\ sell\ without\ paperwork\.\ I’ll\ take\ them\ here\ at\ the\ window\.\ I’ll\ send\ the\ crypto\ once\ they’re\ in\ my\ hand\.\ \{\$counterfeit_medication\}\{\$handover\}$"=我需要 $1，要那種沒有文件就買不到的處方限定品。就在窗口交給我。東西到手後我就轉加密貨幣給你。{$counterfeit_medication}{$handover}
 r:"^I\ need\ (\[\[[^\]\r\n]{1,160}\]\]),\ the\ small\ GPS\ one\.\ Hand\ it\ to\ me\ here\ at\ the\ window\.\ I’ll\ send\ the\ crypto\ as\ soon\ as\ I\ have\ it\.\ \{\$gps_tracker\}\{\$handover\}$"=我需要 $1，要小型 GPS 的那種。就在窗口交給我。我一拿到就轉加密貨幣給你。{$gps_tracker}{$handover}
 r:"^I\ need\ (\[\[[^\]\r\n]{1,160}\]\])\ from\ the\ dark\ web,\ experimental\ compound,\ I've\ done\ everything\ right,\ the\ noodles\ are\ perfect,\ the\ meatballs\ have\ transcended,\ I\ just\ need\ one\ final\ push\ to\ complete\ the\ union\.$"=我需要從暗網弄到 $1，是實驗性化合物。我已經把所有事情都做對了，麵條完美，肉丸也昇華了，我只差最後一步就能完成結合。
@@ -335,7 +338,8 @@ r:"^Just\ give\ me\ my\ (\[\[[^\]\r\n]{1,160}\]\])\ so\ I\ can\ go\ home\ yellin
 r:"^Just\ go\ around\ town\ and\ (\[\[[^\]\r\n]{1,160}\]\])\ okay,\ one\ photo\ each,\ I\ think\ there's\ a\ bunch\ near\ the\ police\ station\ if\ you\ need\ a\ starting\ point\.\ I\ need\ proof\ or\ this\ is\ going\ to\ bother\ me\ forever\.$"=就到鎮上四處 $1，好嗎？每個拍一張。我想警察局附近有不少，如果你需要起點的話。我需要證據，不然這件事會一直困擾我。
 r:"^Kids\ ride\ around\ in\ (\[\[[^\]\r\n]{1,160}\]\])\ somewhere,\ he\ thinks\ he's\ one\ of\ them\ now\.$"=小孩會在某個地方騎著 $1 到處跑，他現在覺得自己也是其中一員了。
 r:"^LEVEL\ UP!\ (?<p0>[^\r\n]{1,160}?)$"=升級！$1
-r:"^Last\ big\ one\.\ (\[\[[^\]\r\n]{1,160}\]\]),\ and\ all\ four\ of\ us\ are\ coming\ up\ for\ it\.\ Up\ to\ the\ ladder\.\ Going\ further\ was\ put\ to\ a\ vote,\ it\ lost\ three\ to\ one,\ and\ the\ one\ is\ still\ angry\ about\ it\.$"=最後一個大的。$1，我們四個都會上去拿。只到梯子那裡。要不要再往前走我們投過票，三比一否決，而投贊成的那個現在還在生氣。
+r:"^Last\ big\ one\.\ (\[\[[^\]\r\n]{1,160}\]\]),\ and\ all\ four\ of\ us\ are\ coming\ up\ for\ it\.\ Up\ to\ the\ ladder\.\ Going\ further\ was\ put\ to\ a\ vote,\ it\ lost\ three\ to\ one,\ and\ the\ one\ is\ still\ angry\ about\ it\.$"=最後一個大的。$1，我們四個都會上去拿。只到梯子那裡。要不要再往前走我
+們投過票，三比一否決，而投贊成的那個現在還在生氣。
 r:"^Last\ saved:\ (?<p0>(?:-?\d+(?:[.,]\d+)?|\{\d+\}))h\ ago$"=上次儲存：$1 小時前
 r:"^Last\ saved:\ (?<p0>[^\r\n]{1,160}?)m\ ago$"=上次儲存：$1 分鐘前
 r:"^Last\ saved:\ (?<p0>[^\r\n]{1,160}?)s\ ago$"=上次儲存：$1 秒前
@@ -367,7 +371,7 @@ r:"^Order\ (?<p0>[^\r\n]{1,160}?)\ from\ the\ dark\ web\.$"=從暗網訂購 $1�
 r:"^Owned:\ (?<p0>(?:-?\d+(?:[.,]\d+)?|\{\d+\}))/(?<p1>[^\r\n]{1,160}?)$"=已擁有：$1/$2
 r:"^PAYMENT\ (?<p0>(?:-?\d+(?:[.,]\d+)?|\{\d+\}))\ OF\ (?<p1>[^\r\n]{1,160}?)$"=第 $1 筆付款，共 $2 筆
 r:"^PAY\ (?<p0>[^\r\n]{1,160}?)$"=支付 $1
-r:"^Pay off your debt for unlimited miner capacity\. \(Remaining: \$(.+)\)$"="還清債務以解鎖無限礦機容量。\n（剩餘：$$1）"
+r:"^Pay off your debt for unlimited miner capacity\. \(Remaining: \$([0-9][0-9,.]*)\)$"="還清債務以解鎖無限礦機容量。\n（剩餘：$$1）"
 r:"^Pay\ (?<p0>[^\r\n]{1,160}?)$"=支付 $1
 r:"^Pay\ off\ your\ debt\ for\ unlimited\ miner\ capacity\.\ \(Remaining:\ \$(?<p0>[+-]?[0-9][0-9,.]*)\)$"=還清債務即可解鎖無限礦機容量。（剩餘：$$1）
 r:"^People\ go\ around\ the\ back\ of\ (\[\[[^\]\r\n]{1,160}\]\])\ when\ they\ don't\ want\ to\ be\ seen,\ and\ so\ did\ he\.$"=人們不想被看見時都會繞到 $1 後面，而他也是。
@@ -377,7 +381,7 @@ r:"^Photograph\ (\[\[[^\]\r\n]{1,160}\]\])\ when\ she\ arrives\.$"=等 $1 出現
 r:"^Photograph\ (\[\[[^\]\r\n]{1,160}\]\])\ you\ can\ find\.$"=拍下你能找到的 $1。
 r:"^Photograph\ (\[\[[^\]\r\n]{1,160}\]\])\.$"=拍下 $1。
 r:"^Photograph\ and\ deliver\ (\[\[[^\]\r\n]{1,160}\]\])\ around\ town\.\ \(\{COUNT\}/\{TOTAL\}\)$"=拍下城鎮中的 $1 並交付照片。（{COUNT}/{TOTAL}）
-r:"^Pick\ up\ (?<p0>[^\r\n]{1,160}?)$"=撿起 $1
+r:"^Pick\ up\ (?!the\ )(?<p0>[^\r\n]{1,160}?)$"=撿起 $1
 r:"^Pick\ up\ the\ (?<p0>[^\r\n]{1,160}?)\.$"=撿起 $1。
 r:"^Pizzas\ sell\ for\ (?<p1>(?:-?\d+(?:[.,]\d+)?|\{\d+\}))%\ more$"=披薩售價提高 $1%
 r:"^Pizzas\ with\ (?<p0>[^\r\n]{1,160}?)$"=含有 $1 的披薩
@@ -427,7 +431,7 @@ r:"^Send\ Order\ \#(?<p0>[^\r\n]{1,160}?)$"=送出訂單 #$1
 r:"^Send\ a\ (\[\[[^\]\r\n]{1,160}\]\])\ via\ courier\.$"=透過快遞寄送 $1。
 r:"^Send\ an\ (\[\[[^\]\r\n]{1,160}\]\])\ via\ courier\.$"=透過快遞寄送 $1。
 r:"^Send\ me\ (?<p0>[^\r\n]{1,160}?),\ I'll\ pay\ after\ it\ comes\ through\.$"=把 $1 送給我，東西到了我就付錢。
-r:"^Send\ the\ (?<p0>[^\r\n]{1,160}?)\ via\ courier\.$"=透過快遞送出 $1。
+r:"^Send\ the\ (?!\[\[!)(?<p0>[^\r\n]{1,160}?)\ via\ courier\.$"=透過快遞送出 $1。
 r:"^Send\ the\ (?<p0>\[\[![^\]\r\n]{1,120}?\]\])\ via\ courier\.$"=透過快遞寄送${p0}。
 r:"^Serve\ Customers\ \((?<p1>(?:-?\d+(?:[.,]\d+)?|\{\d+\}))/(?<p0>[^\r\n]{1,160}?)\)$"=服務顧客 ($1/$2)
 r:"^Settle\ your\ first\ debt\.\ \((?<p0>(?:-?\d+(?:[.,]\d+)?|\{\d+\}))/(?<p1>[^\r\n]{1,160}?)\)$"=償還你的第一筆債務。（$1/$2）
@@ -449,7 +453,8 @@ r:"^So\ yeah\.\ (\[\[[^\]\r\n]{1,160}\]\])\.\ I\ already,\ um,\ I\ already\ hand
 r:"^Somebody\ in\ chat\ called\ me\ small\.\ I'm\ addressing\ it\.\ (\[\[[^\]\r\n]{1,160}\]\])\.$"=聊天室有人說我很小。我現在要處理這件事。$1。
 r:"^Somebody\ left\ (\[\[[^\]\r\n]{1,160}\]\]),\ and\ he\ decided\ that\ was\ a\ lifestyle\.$"=有人留下了 $1，然後他就決定把那當成一種生活方式。
 r:"^Stock (\d+)/(\d+) days$"=庫存：$1/$2 天
-r:"^Stored:\ \$(?<p0>(?:-?\d+(?:[.,]\d+)?|\{\d+\}))\ —\ collect\ at\ machine$"=已儲存：$$1 — 到機器領取
+r:"^Stored:\
+ \$(?<p0>(?:-?\d+(?:[.,]\d+)?|\{\d+\}))\ —\ collect\ at\ machine$"=已儲存：$$1 — 到機器領取
 r:"^Street\ Lvl\ (?<p0>[^\r\n]{1,160}?)$"=街頭等級 $1
 r:"^Strikes\ on\ your\ meter:\ (?<p0>[^\r\n]{1,160}?)\.\ (?<p1>[^\r\n]{1,160}?)\ ends\ the\ run\ at\ (?<p2>(?:-?\d+(?:[.,]\d+)?|\{\d+\}))\ strikes,\ so\ this\ campaign\ can't\ switch\ to\ it\ anymore\.$"=你目前的警告次數：$1。$2 模式會在累積 $3 次警告時結束遊戲，因此這個存檔已無法切換至該模式。
 r:"^Subathon\ rules\ say\ I\ eat\ every\ time\ somebody\ gifts\.\ Somebody\ gifted\.\ A\ lot\.\ (\[\[[^\]\r\n]{1,160}\]\])\.$"=Subathon 規則說每次有人送禮我就要吃東西。有人送了，而且送很多。$1。
@@ -524,20 +529,21 @@ r:"^Your\ order\ of\ (?<p0>[+-]?[0-9][0-9,.]*)\ BTC\ has\ been\ placed\.\n\nYOUR
 r:"^\$(\d+(?:\.\d+)?)  \|  (\d+(?:\.\d+)?) BTC$"=$1 美元 | $2 比特幣
 r:"^\$(\d+(?:\.\d+)?) / day$"=$1 美元/天
 r:"^\$(\d+)\s*/\s*hr\s+\$(\d+)\s*/\s*day$"="$1/小時 $2/天"
-r:"^\+(?<p0>(?:-?\d+(?:[.,]\d+)?|\{\d+\}))\ Street\ Rep$"=+$1 街頭聲望
+r:"^\+(?<p0>(?:-?\d+(?:[.,]\d+)?|\{\d+\}))\ Street\ 
+Rep$"=+$1 街頭聲望
 r:"^\[E\] Collect: \$(\d+(?:\.\d+)?)$"="[E] 領取：$$1"
 r:"^\[E\] Hammer Hank - Bring store photos \((\d+)/(\d+)\)$"="[E] Hammer Hank - 帶來商店照片 ($1/$2)"
-r:"^\[E\] Pick up: (.+)$"=[E] 拿取：$1
+r:"^\[E\] Pick up: ([^\r\n]{1,80})$"=[E] 拿取：$1
 r:"^\[E\] Pirate - \$(\d+(?:\.\d+)?)$"="[E] 海盜 - $$1"
 r:"^\[E\] Put Dough Back \(([0-9]+)/([0-9]+)\)\\n\[Hold B\] Pick up to relocate\\n<color\\=#ffffff80>Freezer</color>$"=[E] 放回麵糰 ($1/$2)\n[按住 B] 拿起以重新放置\n<color\=#ffffff80>冷凍櫃</color>
 r:"^\[E\] Put Dough Back \((\d+)\/(\d+)\)\\n\[Hold B\] Pick up to relocate\\n\[Hold X\] Sell \(\$(\d+(?:\.\d+)?)\)\\n<color\\=#ffffff80>Freezer<\/color>$"=[E] 放回麵糰 ($1/$2)\n[按住 B] 拿起以重新放置\n[按住 X] 出售 (\$$3)\n<color\=#ffffff80>冷凍櫃</color>
 r:"^\[E\] Ricky Bins - Bring trash can photos \((\d+)/(\d+)\)$"="[E] Ricky Bins - 帶來垃圾桶照片 ($1/$2)"
-r:"^\[E\] Serve Order: (.+)$"=[E] 交付訂單：$1
+r:"^\[E\] Serve Order: ([^\r\n]{1,120})$"=[E] 交付訂單：$1
 r:"^\[E\] Serve Order: <color\\=#1B6B3A>(\d+)x Cheese Pizza</color> <color\\=#4CAF50>\((\d+)/(\d+)\)</color>$"=[E] 交付訂單：<color\=#1B6B3A>$1x 起司披薩</color> <color\=#4CAF50>($2/$3)</color>
 r:"^\[E\] Serve Order: <color\\=#1B6B3A>(\d+)x Cheese Pizza</color>$"=[E] 交付訂單：<color\=#1B6B3A>$1x 起司披薩</color>
 r:"^\[E\] Soldier - \$(\d+(?:\.\d+)?)$"="[E] 士兵 - $$1"
 r:"^\[E\] Stored: \$(\d+(?:\.\d+)?)$"="[E] 已儲存：$$1"
-r:"^\[E\] Take: (.+)$"=[E] 拿取：$1
+r:"^\[E\] Take: ([^\r\n]{1,80})$"=[E] 拿取：$1
 r:"^\[E\]\ <color\=\#ff6666>I\ didn't\ ask\ for\ this</color>$"=[E] <color\=#ff6666>我沒有要求這個</color>
 r:"^\[E\]\ <color\=\#ff6666>No\ one\ is\ waiting\ for\ that</color>$"=[E] <color\=#ff6666>沒有人在等待</color>
 r:"^\[E\]\ <color\=\#ff6666>Not\ enough\ money</color>\n<color\=\#ffffff80>Incinerator\ \-\ (?<p0>\$[+-]?[0-9][0-9,.]*)</color>$"=[E] <color\=#ff6666>錢不夠</color>\n<color\=#ffffff80>焚化爐 - $1</color>
@@ -584,7 +590,7 @@ r:"^\[E\]\ Photograph$"=[E] 照片
 r:"^\[E\]\ Pick\ Up\ Document\ \[E\]$"=[E] 拾取檔案 [E]
 r:"^\[E\]\ Pick\ up\ Bitcoin\ Miner\ Crate$"=[E] 拿起比特幣礦工箱
 r:"^\[E\]\ Pick\ up\ Burnt\ Pizza$"=[E] 撿起燒焦的披薩
-r:"^\[E\]\ Pick\ up\ Cheese\ Pizza$"=[E] 拿起乳酪披薩
+r:"^\[E\]\ Pick\ up\ Cheese\ Pizza$"=[E] 拿起起司披薩
 r:"^\[E\]\ Pick\ up\ Custom\ Pizza$"=[E] 領取定製披薩
 r:"^\[E\]\ Pick\ up\ Dough$"=[E] 拿起麵糰
 r:"^\[E\]\ Pick\ up\ Dough\ Box$"=[E] 拿起麵糰箱
@@ -602,7 +608,7 @@ r:"^\[E\]\ Pick\ up\ Red\ Onions\ Box$"=[E] 拿起紅洋蔥盒
 r:"^\[E\]\ Pick\ up\ Sauce\ Station\ Crate$"=[E] 拿起醬料台箱
 r:"^\[E\]\ Pick\ up\ Veggie\ Pizza$"=[E] 拿起素食披薩
 r:"^\[E\]\ Pirate\ \-\ (?<p0>\$[+-]?[0-9][0-9,.]*)\ \(Not\ enough\ money\)$"=[E] 海盜 - $1（錢不夠）
-r:"^\[E\]\ Pizza\ Box\ \(Cheese\ Pizza\)$"=[E] 披薩盒（乳酪披薩）
+r:"^\[E\]\ Pizza\ Box\ \(Cheese\ Pizza\)$"=[E] 披薩盒（起司披薩）
 r:"^\[E\]\ Pizza\ Box\ \(Custom\ Pizza\)$"=[E] 披薩盒（定製披薩）
 r:"^\[E\]\ Pizza\ Box\ \(Margherita\ Pizza\)$"=[E] 披薩盒（瑪格麗特披薩）
 r:"^\[E\]\ Pizza\ Box\ \(Veggie\ Pizza\)$"=[E] 披薩盒（素食披薩）
@@ -643,7 +649,8 @@ r:"^\[E\]\ Soldier\ \-\ (?<p0>\$[+-]?[0-9][0-9,.]*)\ \(Not\ enough\ money\)$"=[E
 r:"^\[E\]\ Start\ Machine$"=[E] 啟動機器
 r:"^\[E\]\ Take\ Adrenaline\ Shot$"=[E] 取走腎上腺素注射器
 r:"^\[E\]\ Take\ Basil\ \((?<p0>[+-]?[0-9][0-9,.]*)/(?<p1>[+-]?[0-9][0-9,.]*)\)\n\[Hold\ B\]\ Pick\ up\ to\ relocate\n\[Hold\ X\]\ Sell\ \((?<p2>\$[+-]?[0-9][0-9,.]*)\)\n<color\=\#ffffff80>Ingredient\ Container</color>$"=[E] 獲取羅勒 ($1/$2)\n[按住 B] 拿起以重新放置\n[按住 X] 出售 ($3)\n<color\=#ffffff80>食材容器</color>
-r:"^\[E\]\ Take\ Bell\ Peppers\ \((?<p0>[+-]?[0-9][0-9,.]*)/(?<p1>[+-]?[0-9][0-9,.]*)\)\n\[Hold\ B\]\ Pick\ up\ to\ relocate\n\[Hold\ X\]\ Sell\ \((?<p2>\$[+-]?[0-9][0-9,.]*)\)\n<color\=\#ffffff80>Ingredient\ Container</color>$"=[E] 拿取甜椒 ($1/$2)\n[按住 B] 拿起以重新放置\n[按住 X] 出售 ($3)\n<color\=#ffffff80>食材容器</color>
+r:"^\[E\]\ Take\ Bell\ Peppers\ \((?<p0>[+-]?[0-9][0-9,.]*)/(?<p1>[+-]?[0-9][0
+-9,.]*)\)\n\[Hold\ B\]\ Pick\ up\ to\ relocate\n\[Hold\ X\]\ Sell\ \((?<p2>\$[+-]?[0-9][0-9,.]*)\)\n<color\=\#ffffff80>Ingredient\ Container</color>$"=[E] 拿取甜椒 ($1/$2)\n[按住 B] 拿起以重新放置\n[按住 X] 出售 ($3)\n<color\=#ffffff80>食材容器</color>
 r:"^\[E\]\ Take\ Blood\ Sample\ Kit$"=[E] 取走血液樣本套件
 r:"^\[E\]\ Take\ Bloody\ Dress$"=[E] 取走染血的裙子
 r:"^\[E\]\ Take\ Boat\ Net$"=[E] 取走船網
@@ -722,3 +729,4 @@ r:"^was\ (?<p0>[^\r\n]{1,160}?)$"=原價 $1
 r:"^with\ (?<p0>[^\r\n]{1,160}?)$"=加上 $1
 r:"^…Anyway\.\ I\ need\ to\ calm\ down\.\ Just\ give\ me\ (\[\[[^\]\r\n]{1,160}\]\])\ so\ I\ can\ go\ home\.$"=……總之。我得冷靜一下。給我 $1，我要回家了。
 r:"^需要 (\d+(?:\.\d+)?) BTC。你目前有 (\d+(?:\.\d+)?) BTC。$"=需要 $1 BTC。你目前有 $2 BTC。
+
