@@ -1,0 +1,23 @@
+{
+  "version": "2026.10.04.1",
+  "files": [
+    {
+      "path": "MainTable_Fixed_zh-TW.txt",
+      "url": "https://raw.githubusercontent.com/XoF-eLtTiL/I-Know-a-Guy-zh-TW/main/Translations/MainTable_Fixed_zh-TW.txt",
+      "size": 585007,
+      "sha256": "517BD8AE6EFAFCE3E70F5B48E37E755AD4FF798ED408A89F4DB1D3EBA4547FBF",
+      "acceptedPreviousSha256": [
+        "B054E3957BCAC9650DAC92ADCB11C727D0B24269AB3B9D2851D37BE7BA6E9D22"
+      ]
+    },
+    {
+      "path": "MainTable_Regex_zh-TW.txt",
+      "url": "https://raw.githubusercontent.com/XoF-eLtTiL/I-Know-a-Guy-zh-TW/main/Translations/MainTable_Regex_zh-TW.txt",
+      "size": 119604,
+      "sha256": "697ADEEF39575DF68B587B873D15FFBCB04D812809EBC5E0F97D0F1C4871C8F9",
+      "acceptedPreviousSha256": [
+        "4A636BFDB7B922A23DFD1C72A1248C053654F154470EA72C4B98FB8ABFBD0D2C"
+      ]
+    }
+  ]
+}

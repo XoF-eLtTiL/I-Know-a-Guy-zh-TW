@@ -1,0 +1,6 @@
+bin/
+obj/
+*.user
+*.download
+*.before-update
+*.log
